@@ -1,12 +1,12 @@
 
 # Selenium Examples:
-This Project contains three examples for Selenmium implination 
+This Project contains three examples for Selenium implication
 
 ## 1. [Watir](http://watir.com/)
 This ruby project shows how to execute BDD test - Search on Amazon </br>
 This project can be executed on local machine or on the cloud.</br>
 To configuration file is under watier\support\env.rb</br>
-ro execute localy set the parameter </br>
+or execute localy set the parameter </br>
     (ENV['ENVIRONMENT'] ||='local'</font>).downcase.to_sym  # allows me to set environment for testing as argument. defaults to 'prod'</br>
 to execute in the cloud </br>
     (ENV['ENVIRONMENT'] ||= 'perfecto').downcase.to_sym  # allows me to set environment for testing as argument. defaults to 'prod'</br>
