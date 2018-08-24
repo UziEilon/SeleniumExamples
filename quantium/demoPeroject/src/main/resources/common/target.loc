@@ -1,0 +1,4 @@
+
+targetSearch = id=search
+targetGo =xpath=//*[text()='go']
+targetSearchResults =xpath=//*[contains(@class,'h-text-hd1')]

@@ -1,0 +1,162 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Web Demo Suite" verbose="0" parallel="tests" thread-count="100">
+	<listeners>
+		<listener class-name="com.quantum.listerners.QuantumReportiumListener"/>
+	</listeners>
+
+	<test name="target on android random" enabled="true" thread-count="10">
+		<parameter name="driver.capabilities.browserName" value="MobileOS"></parameter>
+		<parameter name="driver.capabilities.platformName" value="Android"></parameter>
+		<parameter name="driver.capabilities.location" value="NA-US-BOS"></parameter>
+		<groups>
+			<run>
+				<include name="apple" />
+			</run>
+		</groups>
+		<classes>
+			<class
+					name="com.quantum.tests.apple" />
+		</classes>
+	</test>
+
+	<test name="target on android tablet" enabled="true" thread-count="10">
+		<parameter name="driver.capabilities.deviceName" value="0C5FB884CA824DB3"></parameter>
+	<parameter name="driver.capabilities.platformName" value="Android"></parameter>
+
+	<groups>
+		<run>
+			<include name="apple" />
+		</run>
+	</groups>
+	<classes>
+		<class
+				name="com.quantum.tests.apple" />
+	</classes>
+</test>
+
+	<test name="target on SX" enabled="true" thread-count="10">
+		<parameter name="driver.capabilities.deviceName" value="A1601DBED4C9E66F3DEC5167D515EA98C79A6F8A"></parameter>
+		<parameter name="driver.capabilities.browserName" value="MobileOS"></parameter>
+		<parameter name="driver.capabilities.platformName" value="Android"></parameter>
+
+		<groups>
+			<run>
+				<include name="apple" />
+			</run>
+		</groups>
+		<classes>
+			<class
+					name="com.quantum.tests.apple" />
+		</classes>
+	</test>
+
+	<test name="target on ios big" enabled="true" thread-count="10">
+		<parameter name="driver.capabilities.deviceName" value="D46F153EC7AA6A2C5D6FA15F3CBF31A1FAF7C0C5"></parameter>
+		<parameter name="driver.capabilities.browserName" value="MobileOS"></parameter>
+		<parameter name="driver.capabilities.platformName" value="iOS"></parameter>
+
+
+		<groups>
+			<run>
+				<include name="apple" />
+			</run>
+		</groups>
+		<classes>
+			<class
+					name="com.quantum.tests.apple" />
+		</classes>
+	</test>
+
+
+	<test name="target on android" enabled="true" thread-count="10">
+		<parameter name="driver.capabilities.deviceName" value="9887E8424E31504B58"></parameter>
+		<parameter name="driver.capabilities.browserName" value="MobileOS"></parameter>
+		<parameter name="driver.capabilities.location" value="NA-US-BOS"></parameter>
+
+
+		<groups>
+			<run>
+				<include name="apple" />
+			</run>
+		</groups>
+		<classes>
+			<class
+					name="com.quantum.tests.apple" />
+		</classes>
+	</test>
+
+
+	<test name="target Chrome" enabled="true" thread-count="10">
+		<parameter name="driver.capabilities.browserVersion" value="64"></parameter>
+		<parameter name="driver.capabilities.browserName" value="Chrome"></parameter>
+		<parameter name="driver.capabilities.platformName" value="Windows"></parameter>
+ 		<parameter name="driver.capabilities.platformVersion" value="10"></parameter>
+		<parameter name="driver.capabilities.resolution" value="1280x1024"></parameter>
+		<parameter name="driver.capabilities.location" value="US East"></parameter>
+
+		<groups>
+			<run>
+				<include name="apple" />
+			</run>
+		</groups>
+		<classes>
+			<class
+					name="com.quantum.tests.apple" />
+		</classes>
+	</test>
+
+	<test name="target FireFox" enabled="true" thread-count="10">
+		<parameter name="driver.capabilities.browserVersion" value="58"></parameter>
+		<parameter name="driver.capabilities.browserName" value="Firefox"></parameter>
+		<parameter name="driver.capabilities.platformName" value="Windows"></parameter>
+		<parameter name="driver.capabilities.platformVersion" value="10"></parameter>
+		<parameter name="driver.capabilities.resolution" value="1280x1024"></parameter>
+		<parameter name="driver.capabilities.location" value="US East"></parameter>
+
+		<groups>
+			<run>
+				<include name="apple" />
+			</run>
+		</groups>
+		<classes>
+			<class
+					name="com.quantum.tests.apple" />
+		</classes>
+	</test>
+
+	<test name="target FireFox beta" enabled="true" thread-count="10">
+		<parameter name="driver.capabilities.browserVersion" value="beta"></parameter>
+		<parameter name="driver.capabilities.browserName" value="Firefox"></parameter>
+		<parameter name="driver.capabilities.platformName" value="Windows"></parameter>
+		<parameter name="driver.capabilities.platformVersion" value="10"></parameter>
+		<parameter name="driver.capabilities.resolution" value="1280x1024"></parameter>
+		<parameter name="driver.capabilities.location" value="US East"></parameter>
+		<groups>
+			<run>
+				<include name="apple" />
+			</run>
+		</groups>
+		<classes>
+			<class
+					name="com.quantum.tests.apple" />
+		</classes>
+	</test>
+
+	<test name="vanguard" enabled="true" thread-count="10">
+		<parameter name="driver.capabilities.browserVersion" value="68"></parameter>
+		<parameter name="driver.capabilities.browserName" value="Chrome"></parameter>
+		<parameter name="driver.capabilities.platformName" value="Windows"></parameter>
+		<parameter name="driver.capabilities.platformVersion" value="7"></parameter>
+		<parameter name="driver.capabilities.resolution" value="1280x1024"></parameter>
+		<parameter name="driver.capabilities.location" value="US East"></parameter>
+		<groups>
+			<run>
+				<include name="apple" />
+			</run>
+		</groups>
+		<classes>
+			<class
+					name="com.quantum.tests.apple" />
+		</classes>
+	</test>
+</suite>
